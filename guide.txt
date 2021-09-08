@@ -1,0 +1,40 @@
+# Redirect to current folder
+cd path/to/this/folder
+
+# fill .env file (could be done later)
+
+# Create container (this will also create image if not existed)
+docker-compose run --name cntool cntool
+
+# Start container (if stopped)
+docker start cntool
+
+# Bash to container if it's running
+docker exec -it cntool bash
+
+# ----------------------------------------------------
+
+# Copy private key to ssh to core node
+docker cp <path to private key> cntool:/home/nonroot/.ssh/id_rsa
+# e.g. docker cp ~/.ssh/cardano-testnet cntool:/home/nonroot/.ssh/id_rsa
+
+# TODO: Add public key to knownhosts ?
+
+
+# Change owner of private key to enable readability
+sudo chown nonroot ~/.ssh/id_rsa
+
+# Fill ssh config file to connect to core node 
+vi .ssh/config
+...
+
+# Test connection 
+ssh testnet-core
+
+# Download/Sync files/binaries required to run CNTools offline
+~/scripts/download_bin_files.sh
+~/scripts/sync_cntool_scripts.sh
+
+# Use CNTools
+cd $CNODE_HOME
+scripts/cntools.sh -o

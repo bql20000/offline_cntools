@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  cntool:
+    build: .
+    container_name: cntool
+    env_file: .env
+    security_opt:
+      - no-new-privileges:false
+    volumes: 
+      - ./priv:/opt/cardano/cnode/priv
+      - ./.env:/home/nonroot/.env
+      - ./scripts:/home/nonroot/scripts
+    entrypoint: bash
