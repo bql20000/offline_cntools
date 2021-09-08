@@ -1,0 +1,7 @@
+Host testnet-relay2
+  HostName 1.1.1.1
+  User someuser
+  IdentityFile /home/guild/.ssh/id_rsa    
+  Port 26
+  StrictHostKeyChecking=no
+  UserKnownHostsFile=/dev/null
