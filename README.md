@@ -22,6 +22,7 @@ sudo apt-get install -y rsync grsync openssh-client vim dialog
 sudo chown guild ~/.ssh/*
 sudo chown -R guild $CNODE_HOME
 sudo chmod +x $CNODE_HOME/scripts/*
+sudo chmod +x ~/scripts/*
 
 
 # redirect to cnode home
@@ -30,7 +31,7 @@ cd $CNODE_HOME
 # (Optional if run on testnet) 
 # Since the image some how cannot regconise correct network, we need to download files from servers
 sudo rm -r files/
-scripts/get_config_files.sh
+~/scripts/get_config_files.sh
 
 # (optional) to change env variable, update .env file (local host or in container)
 # Then reload the file (inside container)
