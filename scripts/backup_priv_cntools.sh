@@ -7,7 +7,7 @@
 
 mkdir -p backups/cntools
 
-BACKUP_FILE=
+BACKUP_FILE=$1
 CONTAINER_NAME=cnode    # change if needed
 
 if  [ -z "$BACKUP_FILE" ]  || [ -z "$CONTAINER_NAME" ] 
