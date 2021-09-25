@@ -3,8 +3,8 @@
 
 export GPG_TTY=$(tty)
 
-BACKUP_FILE=mannual_backup-20210925150730.gpg
-BACKUP_BUCKET=test-maxu-daffy
+BACKUP_FILE=
+BACKUP_BUCKET=
 
 if  [ -z "$BACKUP_FILE" ]  || [ -z "$BACKUP_BUCKET" ] 
 then
