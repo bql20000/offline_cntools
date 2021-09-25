@@ -7,13 +7,13 @@
 
 mkdir -p backups/cntools
 
-BACKUP_FILE=online_cntools_backup-20210919135707.tar.gz
-CONTAINER_NAME=cnode
+BACKUP_FILE=
+CONTAINER_NAME=cnode    # change if needed
 
 if  [ -z "$BACKUP_FILE" ]  || [ -z "$CONTAINER_NAME" ] 
 then
   echo "error: BACKUP_FILE or CONTAINER_NAME not declared"
-else
-  docker cp $CONTAINER_NAME:/tmp/cnode/cntools/$BACKUP_FILE backups/cntools
-  echo "Latest cntools backup file: ${BACKUP_FILE}"
-fi
+  exit 0
+
+docker cp $CONTAINER_NAME:/tmp/cnode/cntools/$BACKUP_FILE backups/cntools
+echo "Latest cntools backup file: ${BACKUP_FILE}"
