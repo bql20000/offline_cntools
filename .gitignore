@@ -5,3 +5,8 @@ samples/config
 draft
 
 priv
+
+backups
+restores
+
+mannual_backup-*
