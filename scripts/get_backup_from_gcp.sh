@@ -1,7 +1,7 @@
 # Please run this at root dir (not inside scripts/)
 # Please run this at host (not inside container)
 
-BACKUP_BUCKET=daffy-duckling
+BACKUP_BUCKET=
 
 if [ -z "$BACKUP_BUCKET" ]
 then
