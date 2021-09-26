@@ -9,4 +9,4 @@ then
   exit 0
 fi
 
-scp ${TMP_DIR}/${FILE_TO_TRANSFER} ${CORE_HOST}:${TMP_DIR}/
+scp ${TMP_DIR}/${FILE_TO_TRANSFER} ${CORE_HOST}:${TMP_DIR}
