@@ -4,8 +4,8 @@ services:
   cnode:
     image: cardanocommunity/cardano-node:latest
     container_name: cnode
-    environment: 
-      NETWORK: testnet
+    # environment: 
+    #   NETWORK: testnet
     env_file: .env
     security_opt:
       - no-new-privileges:false
