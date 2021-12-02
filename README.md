@@ -32,7 +32,7 @@ docker cp ~/.ssh/google_compute_engine cnode:/home/guild/.ssh/id_rsa
 1. Install needed packages
 ```
 sudo apt-get update &&
-sudo apt-get install -y rsync grsync openssh-client vim dialog
+sudo apt-get install -y rsync grsync openssh-client vim dialog bsdmainutils
 ```
 
 2. Make sure to have necessary permissions for custom files
