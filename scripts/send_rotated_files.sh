@@ -3,7 +3,7 @@
 HOT_SKEY=${CNODE_HOME}/priv/pool/${POOL_NAME}/hot.skey
 HOT_VKEY=${CNODE_HOME}/priv/pool/${POOL_NAME}/hot.vkey
 OP_CERT=${CNODE_HOME}/priv/pool/${POOL_NAME}/op.cert
-KES_START=${CNODE_HOME}/priv/pool/${POOL_NAME}/key.start
+KES_START=${CNODE_HOME}/priv/pool/${POOL_NAME}/kes.start
 COLD_COUNTER=${CNODE_HOME}/priv/pool/${POOL_NAME}/cold.counter
 
 
