@@ -1,3 +1,5 @@
+# Mannually backup entire priv/ folder 
+
 # Please backup inside container first and make sure
 # /tmp/cnode/cntools/<backup file> exist
 

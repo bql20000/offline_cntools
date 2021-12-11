@@ -1,3 +1,5 @@
+# Mannually backup entire priv/ folder 
+
 # Please run this at root dir (not inside scripts/)
 # Please run this at host (not inside container)
 
