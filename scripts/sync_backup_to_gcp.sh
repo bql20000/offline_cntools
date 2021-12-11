@@ -1,3 +1,5 @@
+# outdated since we're not using GCP anymore
+
 # Please run this at root dir (not inside scripts/)
 # Please run this at host (not inside container)
 
