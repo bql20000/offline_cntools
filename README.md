@@ -1,3 +1,6 @@
+# OFFLINE CNTOOLS
+Helper scripts with docker support to enable hybrid mode of CNTools, ensure that private keys will never stay on hot node.
+
 ## Setup - RUN IN TERMINAL
 
 1. Copy config example files and edit correctly
