@@ -1,5 +1,5 @@
 # OFFLINE CNTOOLS
-Helper scripts with docker support to enable hybrid mode of CNTools, ensure that private keys will never stay on hot node.
+Helper scripts with docker support to enable hybrid mode of [CNTools](https://cardano-community.github.io/guild-operators/), ensure that private keys will never stay on hot node.
 
 ## Setup - RUN IN TERMINAL
 
